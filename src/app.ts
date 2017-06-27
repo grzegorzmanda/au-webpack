@@ -1,6 +1,5 @@
-import { autoinject } from 'aurelia-framework';
-import { Router, RouterConfiguration } from 'aurelia-router';
-import { Aurelia, PLATFORM } from 'aurelia-framework';
+import { Aurelia, PLATFORM } from "aurelia-framework";
+import { Router, RouterConfiguration } from "aurelia-router";
 
 export class App {
 
@@ -8,9 +7,9 @@ export class App {
 
     configureRouter(config: RouterConfiguration, router: Router): void {
         this.router = router;
-        config.title = 'Aurelia';
+        config.title = "Aurelia";
         config.map([
-            { route: ['', 'home'], name: 'instagram', moduleId: PLATFORM.moduleName('instagram/index') }
+            { route: ["", "home"], name: "instagram", moduleId: PLATFORM.moduleName("instagram/index") },
         ]);
 
     }

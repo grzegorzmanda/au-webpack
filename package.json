@@ -7,7 +7,8 @@
   "author": "__riddler__",
   "license": "MIT",
   "scripts": {
-    "start": "yarn webpack-dev-server --hot --inline"
+    "start": "webpack-dev-server --hot --inline",
+    "build": "webpack --progress -p"
   },
   "devDependencies": {
     "aurelia-webpack-plugin": "^2.0.0-rc.2",
@@ -15,6 +16,7 @@
     "awesome-typescript-loader": "^3.1.3",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.4",
+    "expose-loader": "^0.7.3",
     "extract-text-webpack-plugin": "^2.1.2",
     "file-loader": "^0.11.2",
     "html-loader": "^0.4.5",
@@ -37,6 +39,7 @@
     "aurelia-fetch-client": "^1.1.2",
     "aurelia-redux-plugin": "^0.1.2",
     "aurelia-testing": "^1.0.0-beta.3.0.1",
-    "aurelia-validation": "^1.0.0"
+    "aurelia-validation": "^1.0.0",
+    "bluebird": "^3.5.0"
   }
 }
